@@ -1,0 +1,1 @@
+const swiper=new Swiper('.mySwiper',{'slidesPerView':0x1,'spaceBetween':0x14,'loop':!![],'autoplay':{'delay':0xdac,'disableOnInteraction':![]},'pagination':{'el':'.swiper-pagination','clickable':!![]},'breakpoints':{0x300:{'slidesPerView':0x3,'spaceBetween':0x19}}});globalThis['swiper']=swiper;Fancybox['bind']('[data-fancybox=\x27galeria-marina\x27]',{});
