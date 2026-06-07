@@ -3,6 +3,9 @@
  * Contato comercial: (11) 99981-4081
  * Todos os direitos de desenvolvimento reservados.
  */
+html {
+    scroll-behavior: smooth !important;
+}
 
 /* RESET E CONFIGURAÇÕES GERAIS */
 :root {
