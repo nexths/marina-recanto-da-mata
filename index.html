@@ -24,7 +24,8 @@
 <a href=#inicio>Início</a>
 <a href=#sobre>Sobre</a>
 <a href=#estrutura>Estrutura</a>
-<a href="tour-marina-destino/index.html">Tour Virtual</a>
+<a href=#tour>Tour Virtual</a>
+<a href=#localizacao>Localização</a>
 <a href=#contato>Contato</a>
 </nav>
 </div>
@@ -37,14 +38,14 @@
 <a href=https://wa.me/5511988061272 target=_blank class="btn btn-whatsapp">
 <i class="fab fa-whatsapp"></i> Reservar pelo WhatsApp
 </a>
-<a href="tour-marina-destino/index.html" target="_blank" class="btn btn-tour">
+<a href=tour-marina-destino/index.html target=_blank class="btn btn-tour">
 <i class="fas fa-cube"></i> Iniciar Tour Virtual
 </a>
 </div>
 </div>
-<div class=scroll-arrow>
+<a href=#sobre class=scroll-arrow>
 <i class="fas fa-chevron-down"></i>
-</div>
+</a>
 </section>
 <section id=sobre class=sobre-section>
 <div class="container grid-2">
@@ -139,7 +140,9 @@
 <span class=section-badge>TOUR VIRTUAL</span>
 <h2>Conheça a Marina sem sair de casa</h2>
 <p>Explore cada detalhe através do nosso tour virtual em 360°.</p>
-<a href="tour-marina-destino/index.html" class="btn btn-dark-tour"><i class="fas fa-street-view"></i> Iniciar Tour Virtual</a>
+<a href=tour-marina-destino/index.html target=_blank class="btn btn-dark-tour">
+<i class="fas fa-street-view"></i> Iniciar Tour Virtual
+</a>
 </div>
 <div class=tour-banner>
 <img src=assets/preview-tour.webp alt="Preview Tour 360">
@@ -249,5 +252,22 @@ Henrique Silva
 <script src=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js></script>
 <script src=https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js></script>
 <script src=script.js></script>
+<script>document.querySelectorAll('a[href^="#"]').forEach((e=>{e.addEventListener("click",(function(e){const t=document.querySelector(this.getAttribute("href"));if(!t)return;e.preventDefault();const o=document.querySelector(".main-header").offsetHeight,r=t.offsetTop-o;window.scrollTo({top:r,behavior:"smooth"})}))}))</script>
+<script>
+window.addEventListener('load', () => {
+
+    const imagens = [
+        'tour/assets/pano.jpg',
+        'tour/assets/pano1.jpg',
+        'tour/assets/pano2.jpg'
+    ];
+
+    imagens.forEach(src => {
+        const img = new Image();
+        img.src = src;
+    });
+
+});
+</script>
 </body>
 </html>
